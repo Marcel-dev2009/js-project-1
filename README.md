@@ -1,6 +1,5 @@
 # js-project-1
-<<<<<<< HEAD
-=======
+
 A simple rock paper scissors game made with javascript onlick attribute
 
 
