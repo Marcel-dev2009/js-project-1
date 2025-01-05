@@ -1,4 +1,6 @@
 # js-project-1
+<<<<<<< HEAD
+=======
 A simple rock paper scissors game made with javascript onlick attribute
 
 
@@ -7,3 +9,4 @@ A simple rock paper scissors game made with javascript onlick attribute
 https://js-project-1-eta.vercel.app/
 
 Click the link above ☝️ to view project live
+>>>>>>> 2bfd0484a87b045c8d7e80504e96349e590fd6d9
