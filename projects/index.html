@@ -63,14 +63,19 @@
         score.wins = 0;
         score.losses = 0;
         score.Ties = 0;
+        localStorage.removeItem('score');
        ">Reset Score </button>
     <script>
-        const score = {
-          wins : 0,
-          losses : 0,
-          Ties : 1
-        };
-
+        const score = JSON.parse(localStorage.getItem('score')) ||  {
+                wins : 0,
+                losses : 0,
+              Ties: 0          };
+      /*   if (!score) {
+          score = {
+            wins : 0,
+            losses : 0,
+          Ties: 0          }
+        } */
          function pickComputermove (){
         
           const randomNumber = Math.random();
@@ -125,6 +130,8 @@
           } else if (result === 'Tie') {
             score.Ties += 1;
           }
+
+          localStorage.setItem('score', JSON.stringify(score));
           alert (`You picked ${playerMove}, Computer picked ${computerMove}. ${result}
 wins : ${score.wins} , losses : ${score.losses} , Ties : ${score.Ties}`);
         }
